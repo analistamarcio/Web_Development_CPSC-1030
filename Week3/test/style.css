@@ -1,0 +1,7 @@
+body{color: blue;}
+p{color: orange;}
+div p{color: green;}
+/* This is a comment in a CSS file */
+h1 {
+  color: red;
+}
