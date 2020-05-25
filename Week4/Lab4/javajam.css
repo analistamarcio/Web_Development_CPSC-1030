@@ -1,0 +1,22 @@
+p.address {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#wrapper{
+	margin-left : 10%;
+	margin-right : 10%;
+}
+body{
+	font-family: Arial, Verdana, sans-serif;
+	
+}
+h1{
+	text-align: center;
+}
+nav{
+	text-align: center;
+}
+footer { 
+	font-size: .80em;
+    font-style: italic;
+}
