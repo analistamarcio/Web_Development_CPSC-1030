@@ -1,0 +1,13 @@
+body {
+  font-size: 1.2em;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+#foods {
+  font-style: italic;
+  font-weight: bold;
+}
+
+li {
+  text-decoration: underline;
+}
