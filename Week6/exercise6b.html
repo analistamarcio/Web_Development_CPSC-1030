@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Layout 1b </title>
+
+  <style>
+    #wrapper,
+    nav,
+    header,
+    main,
+    div,
+    footer {
+      border-style: solid;
+      border-color: black;
+      border-width: 2px;
+    }
+
+    #wrapper {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      border-color: blue;
+      height: 600px;
+    }
+
+    nav {
+      text-align: right;
+    }
+
+    main {
+      height: 432px;
+    }
+
+    li {
+      list-style-type: none;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    footer {
+      vertical-align: bottom;
+      text-align: center;
+      font-style: italic;
+    }
+
+    div {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="rightcol">
+      <header>
+        <h1>Header</h1>
+      </header>
+
+      <main>
+        Content
+      </main>
+
+      <footer>
+        Footer
+      </footer>
+    </div> <!-- rightcol ending -->
+
+  </div> <!-- wrapper ending -->
+</body>
+
+</html>
