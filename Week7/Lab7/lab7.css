@@ -152,9 +152,9 @@ footer {
     border-bottom: none;
   }
 
-  /* li {
+  li {
     display: inline-block;
-  } */
+  }
 
   main {
     width: 100%;
@@ -163,8 +163,8 @@ footer {
 
 }
 
-/* @media only screen and (max-width: 648px) {
+@media only screen and (max-width: 648px) {
   li {
     display: block;
   }
-} */
+}

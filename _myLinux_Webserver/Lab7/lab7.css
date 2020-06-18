@@ -43,6 +43,7 @@ header {
 
 header h1 {
   margin: auto;
+  text-align: center;
 }
 
 header img {
@@ -144,11 +145,15 @@ footer {
     flex: 1;
     flex-direction: column;
   }
-
+  
   nav {
     width: 100%;
     max-width: 100%;
     border-bottom: none;
+  }
+
+  li {
+    display: inline-block;
   }
 
   main {
@@ -156,4 +161,10 @@ footer {
     margin-left: 0;
   }  
 
+}
+
+@media only screen and (max-width: 648px) {
+  li {
+    display: block;
+  }
 }
