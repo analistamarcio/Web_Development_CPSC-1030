@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #EBF7F8;
+  font: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav,
+header,
+main,
+footer {
+  border: 2px solid #49708A;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+#wrapper {
+  max-width: 860px;
+  margin: auto;
+  padding: 20px;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  color: #CAFF42;
+  background-color: #88ABC2;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+header h1 {
+  margin: auto;
+}
+
+header img {
+  border-style: none;
+  border-right: 2px solid #49708A;
+  border-top-left-radius: 7px;
+}
+
+img {
+  border: 2px solid #49708A;
+}
+
+.navandcontent {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav {
+  font-size: 18px;
+  background: #88ABC2;
+  width: 20%;
+  margin-right: 5px;
+  text-align: center;
+  max-width: 150px;
+}
+
+main {
+  overflow: auto;
+  width: 80%;
+  height: 500px;
+  padding: 5px;
+  margin-left: 5px;
+  background: #D0E0EB;
+  float: left;
+}
+
+main img {
+  width: 200px;
+  background-color: white;
+  box-sizing: border-box;
+  float: right;
+  clear: both;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.spacer {
+  height: calc(100% - 200px);
+  width: 0px;
+  float: right;
+}
+
+li {
+  display: block;
+  list-style-type: none;
+}
+
+nav a{
+  display: block;
+  color: #CAFF42;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+a:visited {
+  color: #CAFF42;
+}
+
+a:link {
+  color: #CAFF42;
+}
+
+nav a:hover {
+  color: #49708A;
+  background-color: #CAFF42;
+}
+
+footer {
+  padding: 8px 5px;
+  font-size: small;
+  vertical-align: bottom;
+  text-align: center;
+  font-style: italic;
+  background-color: #88ABC2;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .navandcontent {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    max-width: 100%;
+    border-bottom: none;
+  }
+
+  main {
+    width: 100%;
+    margin-left: 0;
+  }  
+
+}
