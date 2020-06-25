@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            nav ul {
+                list-type-style: none;
+            }
+            nav ul li {
+                display: inline-block;
+                padding-right: 10px;
+                background-color: #5564A0;  
+                color:azure;
+            }
+            nav ul a {
+                text-decoration: none;
+                color:azure;
+            }
+            nav ul ul li {
+                border: 1px solid #00005d;
+                display: block;
+                padding-left: 1em;
+            }
+            nav {
+                position: absolute;
+            }
+            nav ul ul {
+                position: absolute;
+                background-color: #5564A0;
+                padding: 0;
+                text-align: left;
+                display: none;
+            }
+            nav li:hover ul {
+                display: block;
+            }
+        </style>
+        <title>Dropdown Menu Demo</title>
+    </head>
+    <body>
+        <h1>The demo of dropdown menu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li>Product
+                    <ul>
+                        <li><a href="product1.html">Product One</a></li>
+                        <li><a href="product2.html">Product Two</a></li>
+                        <li><a href="product3.html">Product Three</a></li>   
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>     
+            </ul>
+        </nav>
+    </body>
+</html>
