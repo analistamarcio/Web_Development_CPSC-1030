@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Exercise 8 </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    table {
+      min-width: 640px;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: rgba(240, 255, 144, 0.3);
+    }
+
+    caption {
+      font-size: larger;
+      font-weight: bold;
+    }
+
+    tfoot {
+      text-align: center;
+    }
+
+    th,
+    td {
+      vertical-align: top;
+      padding: 5px;
+      border: 2px solid black;
+    }
+
+    .alignMiddle {
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    #group,
+    #tracks,
+    #year,
+    #links {
+      padding: 20px;
+      margin: auto;
+      min-width: 70px;
+      font-size: larger;
+    }
+
+    dt {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    ul {
+      padding: 0 0 0 30px;
+    }
+
+    li {
+      list-style: circle;
+    }
+
+    #tracksCol li {
+      min-height: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: chocolate;
+    }
+
+    a:visited,
+    a:link {
+      color: chocolate;
+    }
+
+    a:hover {
+      color: teal;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>My favorite music album</caption>
+    <thead>
+      <tr>
+        <th id="group">Group</th>
+        <th id="tracks">Tracks</th>
+        <th id="year">Year</th>
+        <th id="links">Links</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="gCol" headers="group">
+          <dl>
+            <dt>Coldplay</dt>
+            <dd>
+              <ul>
+                <li>Chris Martin</li>
+                <li>Guy Berryman</li>
+                <li>Jonny Buckland</li>
+                <li>Will Champion</li>
+                <li>Phil Harvey</li>
+              </ul>
+            </dd>
+          </dl>
+        </td>
+        <td id="tracksCol" headers="tracks">
+          <ul>
+            <li>Sunrise</li>
+            <li>Church</li>
+            <li>Trouble in Town</li>
+            <li>BrokEn</li>
+            <li>Daddy</li>
+            <li>WOTW/POTP</li>
+            <li>Arabesque</li>
+            <li>When I Need a Friend</li>
+            <li>Guns</li>
+            <li>Orphans</li>
+            <li>Èkó</li>
+            <li>Cry Cry Cry</li>
+            <li>Old Friends</li>
+            <li>Champion of the World</li>
+            <li>Everyday Life</li>
+          </ul>
+        </td>
+        <td class="alignMiddle" headers="year">2019</td>
+        <td class="alignMiddle" headers="links">
+          <a href="https://www.allmusic.com/album/everyday-life-mw0003329823" target="_blank">Everyday
+            Life info</a><br>
+          <a href="https://www.allmusic.com/artist/coldplay-mn0000775877" target="_blank">Coldplay Discography</a>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">By <a href="mailto:analistamarcio@hotmail.com">Marcio Ferreira</a></td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

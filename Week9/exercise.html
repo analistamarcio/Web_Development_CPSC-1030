@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practice Drawing</title>
+<meta charset="utf-8">
+<style type="text/css">
+	#wrapper{
+		width: 600px;
+		border-style: outset;
+		border-color: grey;
+		background-color: linen;
+	}
+	#box1{
+		background-color: LightYellow ;
+		border: solid black;
+		width: 450px;
+		margin: 50px auto 50px auto;
+	}
+	#box3{
+		background-image: url(mario-thumb.png);
+		background-repeat: no-repeat;
+		width: 150px;
+		margin-left: auto;
+		height: 150px;
+		color: red;
+		font-weight: bold;
+		text-align: center;
+		font-size: 14pt;
+	}
+	#table1{
+		caption-side: bottom;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	table,td,th{
+		border: solid black 1px;
+	}
+	#good{background-color: green;}
+	#bad{background-color: red;}
+</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+	<div id="wrapper">
+		<div id="box1">
+			<h3>Class Averages</h3>
+			<div id="box2">
+				<table id="table1">
+				<caption>Midterm Information</caption>
+					<tr>
+						<th>Section</th>
+						<th>Exam</th>
+						<th>Average</th>
+					</tr>
+					<tr>
+						<td>004</td>
+						<td rowspan="2">Midterm 1</td>
+						<td id="good">74.7</td>
+					</tr>	
+					<tr>
+						<td>M02</td>
+						<td id="bad">56.4</td>
+					</tr>	
+					<tr>
+						<td colspan="2" style="text-align: right;">Average Overall</td>
+						<td>65.55</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="box3">	
+			<p>1-Up!</p>
+		</div>
+	</div>
+</body>
+</html>

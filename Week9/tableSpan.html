@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>HTML TABLES</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		table, td, th { 
+            border: 1px solid black;
+            text-align: center;
+        }
+		#table1{
+            border-collapse: collapse;
+        }
+	</style>
+</head>
+<body>
+
+<table id="table1">
+	<tr>
+		<th>Day</th>
+		<th>Month</th>
+		<th>Year</th>
+ 		<th>Hour</th>
+		<th>Minute</th>
+		<th>Second</th>       
+	</tr>
+	
+	<tr>
+		<td>01</td>
+		<td>05</td>
+		<td>2020</td>
+        <td colspan="3" rowspan="3">8:26:18</td>
+	</tr>
+
+	<tr>
+		<td>01</td>
+		<td>06</td>
+		<td>2020</td>		
+	</tr>	
+	<tr>
+		<td>01</td>
+		<td>08</td>
+		<td>2020</td>		
+	</tr>	
+    <caption>Important Date</caption>
+</table>	
+
+</body>
+</html>

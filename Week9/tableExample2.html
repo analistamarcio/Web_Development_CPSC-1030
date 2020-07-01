@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>HTML TABLES</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		table, td, th { border: 1px solid black }
+		#table1{border-collapse: collapse}
+	</style>
+</head>
+<body>
+
+
+<p>Spanning Cols and Rows</p>
+<table id="table1">
+	<tr>
+		<th>Question</th>
+		<th>Student</th>
+		<th>Grade</th>
+	</tr>
+	
+	<tr>
+		<td rowspan="2">Coding</td>
+		<td>Jamie</td>
+		<td>24</td>
+	</tr>	
+	<tr>
+
+		<td>Amir</td>
+		<td>20</td>
+
+	</tr>	
+
+	<tr>
+		<td colspan="2" style="text-align: right;">Average</td>
+		<td colspan="2">22</td>
+	</tr>
+</table>	
+
+</body>
+</html>
