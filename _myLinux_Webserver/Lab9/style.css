@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background: #ebebeb;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: auto;
+  padding: 20px;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+td, th, tr {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+#header1 {
+  background-color: darkgray;
+  color: black;
+}
+
+#header2 {
+  background-color: black;
+  color: white;
+}
+
+.inside {
+  padding: 0;
+}
+
+.table1 tr:hover{
+  background-color: #d5d5d5;
+}
+
+.outside {
+  max-width: 200px;
+}
+
+hr {
+  margin: 10px 0;
+  border-top: 1px solid black;
+}
+
+caption {
+  text-align: left;
+  caption-side: bottom;
+  font-size: 14px;
+  font-style: italic;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited, a:link {
+  color: rgb(0, 140, 138);
+}
+
+a:hover {
+  color: rgb(32, 32, 255);
+}
+
+tfoot {
+  font-size: 16px;
+  text-align: center;
+}
+
+.inside tr:first-child td {
+  border-top: 0;
+}
+
+.inside tr td:first-child {
+  border-left: 0;
+}
+
+.inside tr:last-child td {
+  border-bottom: 0;
+}
+
+.inside tr td:last-child {
+  border-right: 0;
+}
+
+.inside tr:first-child th {
+  border-top: 0;
+}
+
+.inside tr th:first-child {
+  border-left: 0;
+}
+
+.inside tr th:last-child {
+  border-right: 0;
+}
