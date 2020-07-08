@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  font: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+#wrapper {
+  max-width: 860px;
+  margin: auto;
+  padding: 20px;
+  align-items: center;
+}
+
+main {
+  border: 2px solid #49708A;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+form button {
+  border: none;
+  margin-top: 8px;
+}
+
+fieldset {
+  padding: 0 10px;
+}
+
+input {
+  margin-bottom: 6px;
+}
+
+select {
+  width: 120px;
+}
+
+#address input {
+  min-width: 240px;
+}
+
+span {
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+legend {
+  padding: 0 10px;
+}
+
+#favMonth td:last-child {
+  padding-left: 50px;
+}

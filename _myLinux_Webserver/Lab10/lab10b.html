@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lab 10 - Hands-On Exercise 5 </title>
+  <link rel="stylesheet" href="lab10b.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Music Survey</h1>
+    </header>
+    <main>
+      <form method="POST">
+        <span>Name:</span><br>
+        <input type="text" name="name" id="name" maxlength="30">
+        <br>
+        <span>E-Mail:</span><br>
+        <input type="text" name="email" id="email">
+        <br><br>
+        <fieldset id="favMusic">
+          <legend>Select Your Favorite Types of Music</legend><br>
+          <input type="checkbox" name="favMusic" id="favPop" value="Pop">
+          <label for="favPop">Pop</label><br>
+          <input type="checkbox" name="favMusic" id="favClassical" value="Classical">
+          <label for="favClassical">Classical</label><br>
+          <input type="checkbox" name="favMusic" id="favRock" value="Rock">
+          <label for="favRock">Rock</label><br>
+          <input type="checkbox" name="favMusic" id="favFolk" value="Folk">
+          <label for="favFolk">Folk</label><br>
+          <input type="checkbox" name="favMusic" id="favRap" value="Rap">
+          <label for="favRap">Rap</label><br>
+          <input type="checkbox" name="favMusic" id="favOther" value="Other">
+          <label for="favOther">Other</label><br>
+        </fieldset>
+        <br>
+        <fieldset id="period">
+          <legend>Select how often you purchase Music</legend><br>
+          <input type="radio" name="period" id="weekly" value="weekly">
+          <label for="weekly">Weekly</label><br>
+          <input type="radio" name="period" id="fewYear" value="fewYear">
+          <label for="fewYear">A few CDs each year</label><br>
+          <input type="radio" name="period" id="monthly" value="monthly">
+          <label for="monthly">Monthly</label><br>
+          <input type="radio" name="period" id="never" value="never">
+          <label for="never">Never purchase</label><br>
+        </fieldset>
+        <br>
+        <span>Select the locations you listen to Music:</span><br>
+        <select size="3" name="location" id="location">
+          <option value="atHome">At home</option>
+          <option value="inTheCar">In the car</option>
+          <option value="anywhere">Anywhere</option>
+          <option value="atSchool">At the school</option>
+          <option value="onTheStreet">On the street</option>
+        </select>
+        <br><br>
+        <span>What role does the music play in your life?</span><br>
+        <textarea name="role" id="role" cols="60" rows="3"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </main>
+    <footer>Marcio Ferreira - <a href="mailto:marcio@langara.ca">marcio@langara.ca</a></footer>
+  </div>
+</body>
+
+</html>

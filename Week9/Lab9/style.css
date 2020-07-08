@@ -23,6 +23,7 @@ main {
 
 table {
   border-collapse: collapse;
+  border: ;
 }
 
 td, th {

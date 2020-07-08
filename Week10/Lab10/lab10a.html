@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lab 10 - Hands-On Exercise 1 </title>
+  <link rel="stylesheet" href="lab10a.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header></header>
+    <main>
+      <form method="POST" action="http://webdevbasics.net/scripts/demo.php">
+        <input type="hidden" name="userid" id="userid" value="userid@domain.ca">
+        <span>Name:</span><br>
+        <input size="40" type="text" name="name" id="name" maxlength="30">
+        <br>
+        <span>Password:</span><br>
+        <input type="password" name="pword" id="pword">
+        <br><br>
+        <fieldset>
+          <legend>Favorite month of the year</legend><br>
+          <table id="favMonth">
+            <tr>
+              <td>
+                <input type="radio" name="favMonth" id="favJan" value="January">
+                <label for="favJan">January</label><br>
+                <input type="radio" name="favMonth" id="favFebruary" value="February">
+                <label for="favFebruary">February</label><br>
+                <input type="radio" name="favMonth" id="favMarch" value="March">
+                <label for="favMarch">March</label><br>
+                <input type="radio" name="favMonth" id="favApril" value="April">
+                <label for="favApril">April</label><br>
+                <input type="radio" name="favMonth" id="favMay" value="May">
+                <label for="favMay">May</label><br>
+                <input type="radio" name="favMonth" id="favJune" value="June">
+                <label for="favJune">June</label><br>
+              </td>
+              <td>
+                <input type="radio" name="favMonth" id="favJuly" value="July">
+                <label for="favJuly">July</label><br>
+                <input type="radio" name="favMonth" id="favAugust" value="August">
+                <label for="favAugust">August</label><br>
+                <input type="radio" name="favMonth" id="favSeptember" value="September">
+                <label for="favSeptember">September</label><br>
+                <input type="radio" name="favMonth" id="favOctober" value="October">
+                <label for="favOctober">October</label><br>
+                <input type="radio" name="favMonth" id="favNovember" value="November">
+                <label for="favNovember">November</label><br>
+                <input type="radio" name="favMonth" id="favDecember" value="December">
+                <label for="favDecember">December</label>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br>
+        <span>Favorite social networking site:</span><br>
+        <select size="1" name="favSocialMedia" id="favSocialMedia">
+          <option>Select</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="LinkedIn">LinkedIn</option>
+          <option value="TikTok">TikTok</option>
+          <option value="Twitter">Twitter</option>
+        </select>
+        <br><br>
+        <fieldset id="address">
+          <legend>Shipping Address</legend>
+          <br>
+          <label for="addressLine1">Address line 1</label><br>
+          <input type="text" name="addressLine1" id="addressLine1"><br>
+          <label for="addressLine2">Address line 2</label><br>
+          <input type="text" name="addressLine2" id="addressLine2"><br>
+          <label for="city">City</label><br>
+          <input type="text" name="city" id="city"><br>
+          <label for="state">State</label><br>
+          <input type="text" name="state" id="state"><br>
+          <label for="zip">ZIP</label><br>
+          <input type="text" name="zip" id="zip">
+        </fieldset>
+        <button type="submit"><img src="images/signup.gif" alt="Sign Up" width="80"></button>
+      </form>
+    </main>
+    <footer></footer>
+  </div>
+</body>
+
+</html>
