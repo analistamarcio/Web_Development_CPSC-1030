@@ -162,7 +162,6 @@ nav a:hover {
 
 /* Tablet screen size */
 @media only screen and (max-width: 1024px) {
-
   #navContent {
     flex-direction: column;
   }
@@ -197,16 +196,21 @@ nav a:hover {
   }  
 }
 
+#about {
+  font-size: large;
+}
+
 /* Mobile screen size */
 @media only screen and (max-width: 648px) {
   header {
     height: 68px;
     padding: 0;
+    justify-content: center;
   }
     
   header img {
     margin: 4px;
-    min-width: 80px;
+    min-width: 90px;
   }
 
   nav {
@@ -220,6 +224,7 @@ nav a:hover {
   
   nav a {
     min-width: 300px;
+    min-height: 38px;
     height: 44px;
   }
   
@@ -237,6 +242,7 @@ nav a:hover {
   
   #headerCol2 span {
     max-height: 20px;
+    font-size: small;
   }
   
   #headerCol2 h1 {
@@ -252,7 +258,4 @@ nav a:hover {
     display: none;
   }
 
-  nav a {
-    min-height: 38px;
-  }
 }

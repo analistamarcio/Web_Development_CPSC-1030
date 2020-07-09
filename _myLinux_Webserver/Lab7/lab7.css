@@ -6,12 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #EBF7F8;
-  font: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 nav,
 header,
 main,
@@ -20,6 +14,9 @@ footer {
 }
 
 body {
+  background: #EBF7F8;
+  font: 16px;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
   width: 100vw;
