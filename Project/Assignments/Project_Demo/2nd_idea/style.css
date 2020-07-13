@@ -1,0 +1,83 @@
+/* ---------- Collor Pallete ----------- */
+/*   #F9F7F0  #18B7BE  #178CA4  #072A40  */
+/* ---------- Collor Pallete ----------- */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* nav,
+header,
+main,
+footer {
+  border: 2px solid #072A40;
+} */
+
+body {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  background: black;
+}
+
+#wrapper {
+  width: 100%; /* keep the same width with different content */
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  border: 2px solid aqua;
+}
+
+/* main {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  align-items: center; items inside element
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+} */
+
+main {
+  border: 2px dotted greenyellow; /* to delete */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+
+main div { /* to delete */
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+}
+
+/* full size sections */
+#about, #work, #education, #skills, #contact {
+  flex-direction: column; /* align on top */
+  align-items: center; /* align on center horizontaly */
+  width: 100vw;
+  height: 100vh;
+}
+
+/* hide sections */
+#work, #education, #skills, #contact {
+  height: 0;
+  display: none;
+}
+
+#about {
+  display: flex;
+}
