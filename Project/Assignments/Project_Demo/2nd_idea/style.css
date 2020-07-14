@@ -34,7 +34,8 @@ body {
   height: 100%;
   margin: auto;
   align-items: center;
-  border: 2px solid aqua;
+  /* border: 2px solid aqua; */
+  overflow: scroll;
 }
 
 /* main {
@@ -51,11 +52,11 @@ body {
 main {
   border: 2px dotted greenyellow; /* to delete */
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  /* width: 100vw; */
-  /* height: 100vh; */
+  width: 100vw;
+  height: 100vh;
 }
 
 main div { /* to delete */
@@ -64,12 +65,16 @@ main div { /* to delete */
   border: 2px solid red;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 /* full size sections */
 #about, #work, #education, #skills, #contact {
   flex-direction: column; /* align on top */
   align-items: center; /* align on center horizontaly */
-  width: 100vw;
-  height: 100vh;
+  width: 100px;
+  height: 100px;
 }
 
 /* hide sections */
@@ -79,5 +84,11 @@ main div { /* to delete */
 }
 
 #about {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#skills {
   display: flex;
 }

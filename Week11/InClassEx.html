@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>JavaScript!</title>
+</head>
+<body>
+	<h1>JavaScript Demonstrations</h1>
+	<p>This website will demonstrate some of the cool things you can do with JS!</p>
+	<p>Here is a second paragraph of text</p>
+	<button type="button" onmouseover="changeColor(event)">Let's hover!</button>
+	<button type="button" onclick="alert('you clicked the button')">Click!</button>
+
+	<script>
+	//ex 1
+	//alert("hello world!");
+	
+	
+	//ex2
+	//document.write("some text");
+	
+	//ex3
+	//see click button
+	
+	//ex4
+	//var name = prompt("Please enter your name: ");
+	//alert("Your name was " + name);
+	
+	//ex5
+	/*var num1 = prompt("Please enter a number: ");
+	var num2 = prompt("Please enter a number: ");
+	var quotient = num1 / num2;
+	alert("Your quotient is " + quotient);*/
+
+	//ex6
+	/*var name = prompt("enter your name:");
+	if(name == "Jamie")
+		alert("That’s my name too!");
+	else alert("That’s not my name");*/
+
+	//ex7
+	/*document.addEventListener("keydown", function(event){
+		if(event.keyCode == 32)
+			document.body.style.backgroundColor = "orange";
+	});*/
+
+	//ex8
+	/*document.addEventListener("keyup", function(event){
+		if(event.keyCode == 32)
+			document.body.style.backgroundColor = "";
+	});*/
+	
+	
+	//ex9
+	function sum(x,y){
+		alert(x+y);
+	}
+	//sum(5,5);
+
+	function changeColor(event){
+		event.target.style.backgroundColor = "blue";
+	}
+	
+	
+	
+
+	
+
+	
+
+
+	</script>
+</body>
+</html>

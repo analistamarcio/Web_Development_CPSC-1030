@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>An Example</title>
+		<meta charset="utf-8">
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+			table, td, th {
+				border: 1px solid black;
+			}
+			#container{
+				width: 400px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>Fill Table using JS</h1>
+			</header>
+			<main>
+				<p>Input your number here: <input type="number" id="input"></p>
+				<table>
+					<tr>
+						<th>Times 5</th>
+						<th>Times 10</th>
+						<th>Sum</th>
+					</tr>
+					<tr>
+						<td id="first"></td>
+						<td id="second"></td>
+						<td id="third"></td>
+					</tr>
+				</table>
+				<p>Clicking this button will fill the table with multiples of your entered number</p>
+				<input type="button" value="Fill!" onclick="fillTable()">
+			</main>
+		</div>
+		<script>
+			function fillTable(){
+				var number = document.getElementById("input").value;
+				document.getElementById("first").innerHTML = number * 5;
+				document.getElementById("second").innerHTML = number * 10;
+				document.getElementById("third").innerHTML = "";
+			}
+		</script>
+	</body>
+</html>
