@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lab 11 - Exercise 1 </title>
+  <script src="lab11.js"></script>
+  <style>
+    * {
+      margin-left: 2px;
+      margin-bottom: 4px;
+    }
+
+    input {
+      padding: 4px;
+    }
+
+    p {
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Chapter 14 Hands-On Exercise 1</h1>
+  <!-- Exercise 1 - Task 1 -->
+  <p>Welcome button:
+    <input type="button" value="Welcome" onclick="welcome()">
+  </p>
+  <br>
+  <!-- Exercise 1 - Task 2 -->
+  <p onmouseover="welcome()"><a href="#">Hover for a welcome message</a></p>
+  <br>
+  <!-- Exercise 1 - Task 3 -->
+  <p onmouseout="welcome()"><a href="#">Move your mouse pointer here for a welcome message</a></p>
+  <script>
+    function welcome() {
+      alert("Welcome!");
+    }
+  </script>
+</body>
+
+</html>
