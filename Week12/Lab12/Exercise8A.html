@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Exercise 8A </title>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#hide").click(function () {
+        $("img").hide();
+      });
+      $("#show").click(function () {
+        $("img").show();
+      });
+      $("#flip").click(function () {
+        $("#panel").slideToggle("slow");
+      });
+    });
+  </script>
+  <style>
+    #panel {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+  <div id="flip">
+    <h3>Sue Storm</h3>
+  </div>
+  <div id="panel">
+    <p>The Invisible Woman. She is a member of the fantastic four. Her husband is Reed Richards (Mr. Fantastic) and her
+      brother is Johnny Storm (Human Torch)</p>
+  </div>
+  <img src="suestorm.jpg" width="250" alt="Sue Storm - the invisible woman">
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Exercise 8B </title>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Exercise 8b - part 1
+      $('input[name="firstname"]').val("Leonidas");
+      $('input[name="lastname"]').prop("disabled", true);
+      $('input[name="firstname"]').attr("size", 40);
+      $('input[name="firstname"]').attr("placeholder", "First name");
+
+      // add dropdown list
+      $("form").append('<br><br>Veggies: <select name="vList" id="veggies"></select>');
+      var myOptions = {
+        Carrots: "Carrots",
+        Peas: "Peas",
+        Corn: "Corn",
+        Beans: "Beans"
+      };
+      var mySelect = $('#veggies');
+      $.each(myOptions, function (val, text) {
+        mySelect.append(
+          $('<option></option>').val(val).html(text)
+        );
+      });
+
+      // add unordered list
+      $("form").append("<ul><li>Orange</li><li>Strawberry</li><li>Apple</li><li>Tangerine</li></ul>");
+
+      // Exercise 8b - part 3
+      function change() {
+        $("li:odd").css("color", "red");
+        let myVeggie = $("#veggies").val();
+        alert("Your favorite vegetable is " + myVeggie + ".");
+      }
+
+      // Exercise 8b - part 2
+      $("#b1").click(change);
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <form action="/action_page.php">
+    First name: <input type="text" name="firstname">
+    Last name: <input type="text" name="lastname">
+    <button type="button" id="b1">Click Me!</button>
+    <input type="submit">
+  </form>
+
+</body>
+
+</html>
