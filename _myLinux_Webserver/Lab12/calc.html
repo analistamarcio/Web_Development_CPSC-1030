@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Lab 10</title>
+
+   <script>
+      function addition() {
+         var x = +document.getElementById('num1').value;
+         var y = +document.getElementById('num2').value;
+         let result = x + y;
+         document.getElementById("result").value = result;
+      }
+      function subtraction() {
+         var x = +document.getElementById('num1').value;
+         var y = +document.getElementById('num2').value;
+         let result = x - y;
+         document.getElementById("result").value = result;
+      }
+      function multiplication() {
+         var x = +document.getElementById('num1').value;
+         var y = +document.getElementById('num2').value;
+         let result = x * y;
+         document.getElementById("result").value = result;
+      }
+      function division() {
+         var x = +document.getElementById('num1').value;
+         var y = +document.getElementById('num2').value;
+         let result = x / y;
+         document.getElementById("result").value = result;
+      }
+      function reset() {
+         document.getElementById('num1').value = 0;
+         document.getElementById('num2').value = 0;
+         document.getElementById("result").value = 0;
+      }
+   </script>
+</head>
+
+<body>
+
+   <header>
+      <h1>Calculator Using Forms &amp; JavaScript</h1>
+   </header>
+
+   <form>
+      Number 1: <input type="text" id="num1" value="0"><br><br>
+      Number 2: <input type="text" id="num2" value="0"><br><br>
+      Result: <input type="text" id="result" value="0" readonly><br><br>
+   </form>
+
+   <input onclick="addition()" type="button" id="addition" value="+">
+   <input onclick="subtraction()" type="button" id="subtraction" value="-">
+   <input onclick="multiplication()" type="button" id="multiplication" value="*">
+   <input onclick="division()" type="button" id="division" value="/">
+   <input onclick="reset()" type="button" id="reset" value="C">
+
+</body>
+
+</html>
