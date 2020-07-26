@@ -32,7 +32,57 @@
         </ul>
       </nav>
 
-      <main>Contact main content</main>
+      <main>
+        <div id="contact">
+          <h2>Contact Me</h2><br>
+
+          <table>
+            <tr>
+              <td class="tbImg"><a href="https://linkedin.com/in/analistamarcio/" target="_blank"><img
+                    src="images/Linkedin.png" alt="LinkedIn" width="28"></a></td>
+              <td class="tbDesc"><a href="https://linkedin.com/in/analistamarcio/" target="_blank">LinkedIn</a></td>
+            </tr>
+            <tr>
+              <td class="tbImg"><a href="https://github.com/analistamarcio" target="_blank"><img src="images/github.png"
+                    alt="Github" width="28"></a></td>
+              <td class="tbDesc"><a href="https://github.com/analistamarcio" target="_blank">Github</a></td>
+            </tr>
+            <tr>
+              <td class="tbImg"><a href="https://docs.microsoft.com/en-us/users/analistamarcio/" target="_blank"><img
+                    src="images/microsoft.png" alt="Microsoft Learning" width="24"></a></td>
+              <td class="tbDesc"><a href="https://docs.microsoft.com/en-us/users/analistamarcio/"
+                  target="_blank">Microsoft Learning</a></td>
+            </tr>
+            <tr>
+              <td class="tbImg"><a href="tel:111111111" target="_blank"><img src="images/phone.png" alt="Phone number"
+                    width="28"></a></td>
+              <td class="tbDesc"><a href="tel:111111111" target="_blank">(111) 111-1111</a></td>
+            </tr>
+          </table>
+          <br>
+
+          <div id="formResult">
+            <br><br><br>
+            <p>Thank you for your contact!</p>
+          </div>
+
+          <form id="myForm">
+            <!-- <fieldset> -->
+            <!-- <legend>Contact Me</legend> -->
+            <label for="name">Name:</label><br>
+            <input onfocus="colorBox(this)" onblur="uncolorBox(this)" type="text" name="name" id="name"
+              placeholder="Your name"><br>
+            <label for="phone">Phone:</label><br>
+            <input onfocus="colorBox(this)" onblur="uncolorBox(this)" type="text" name="phone" id="phone"
+              placeholder="Your phone number"><br>
+            <label for="userText">Your comment or asking:</label><br>
+            <textarea onfocus="colorBox(this)" onblur="uncolorBox(this)" name="userText" id="userText" cols="30"
+              rows="8"></textarea><br>
+            <input onclick="simulateSubmit()" type="button" value="Submit">
+            <!-- </fieldset> -->
+          </form>
+        </div>
+      </main>
     </div>
 
     <footer>
@@ -43,6 +93,26 @@
       <a href="mailto:marcio@langara.ca"><img src="images/email.png" alt="email" width="20"></a>
     </footer>
   </div>
+
+  <script>
+    let myForm = document.getElementById("myForm");
+    let formResult = document.getElementById("formResult");
+
+    function colorBox(elem) {
+      elem.style.color = "white";
+      elem.style.backgroundColor = "#18B7BE";
+    }
+
+    function uncolorBox(elem) {
+      elem.style.color = "#072A40";
+      elem.style.backgroundColor = "white";
+    }
+
+    function simulateSubmit() {
+      myForm.style.display = "none";
+      formResult.style.display = "block";
+    }
+  </script>
 </body>
 
 </html>

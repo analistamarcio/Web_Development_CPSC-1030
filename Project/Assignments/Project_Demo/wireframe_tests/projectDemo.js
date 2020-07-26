@@ -1,6 +1,6 @@
-let control = document.getElementsByTagName("main").item(0);
+let control = document.getElementById("wrapper");
 
-// control.addEventListener("wheel", scrolling);
+control.addEventListener("wheel", scrolling);
 let scrllVal = 0;
 let shownDivL = document.getElementById("aboutLeft");
 let shownDivR = document.getElementById("aboutRight");
@@ -13,7 +13,7 @@ function scrolling() {
   // console.log(inMovLeft.id.replace("Left", ""));
   if (control.scrollTop > 0) {
     if (inMovRight.offsetLeft - inMovLeft.offsetLeft >= shownDivL.offsetWidth) {
-      for (let i = 0; i < 24; i++) {
+      for (let i = 0; i < 4; i++) {
         scrllVal--;
         // control.scrollTop = 0;
         shownDivL.style.marginLeft = scrllVal + "px";
@@ -25,7 +25,7 @@ function scrolling() {
     }
   } else {
     if (inMovRight.offsetLeft - inMovLeft.offsetLeft <= 3 * shownDivL.offsetWidth - 4) {
-      for (let i = 0; i < 24; i++) {
+      for (let i = 0; i < 4; i++) {
         scrllVal++;
         shownDivL.style.marginLeft = scrllVal + "px";
         shownDivR.style.marginRight = scrllVal + "px";
@@ -40,10 +40,6 @@ function scrolling() {
   //   " inMovLeft = " + inMovLeft.offsetLeft +
   //   " inMovRight = " + inMovRight.offsetLeft +
   //   " diff = " + (inMovRight.offsetLeft - inMovLeft.offsetLeft));
-
-  console.log("scrllVal = " + scrllVal +
-    " shownDivL = " + shownDivL.style.marginLeft +
-    " shownDivR = " + shownDivR.style.marginRight);
 }
 
 function changePage(direction) {
@@ -51,9 +47,6 @@ function changePage(direction) {
   let pageIndex = pages.indexOf(inMovLeft.id.replace("Left", ""));
 
   // console.log(inMovLeft.id.replace("Left", ""));
-
-  // shownDivL.style.marginLeft = -shownDivL.offsetWidth + "px";
-  // shownDivR.style.marginRight = -shownDivR.offsetWidth + "px";
 
   if (direction === 1) {
     // direction = 1 means next page
