@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Flex Box!</title>
+   <style>
+   		.container{
+   			display: flex;
+   			flex-direction: row;
+   			flex-wrap: wrap;
+   			justify-content: center;
+   		}
+		#inner{
+			flex: 8;
+			background-color: gray;
+		}
+		header{
+			flex: 10;
+			background-color: lightgray;
+			text-align: center;
+		}
+   		nav{
+			flex: 2;
+			background-color: darkgray;
+		}
+		footer{
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+   </style>
+</head>
+<body>
+	<div class="container">
+		<header>SOME HEADER</header>
+	</div>
+	<div class="container">
+		<nav><a href="#">SOME LINK</a></nav>
+		<div id="inner">
+			<main>
+				<p>Some main content</p>
+				<p>Some other main content</p>
+				<p>Some more main content</p>
+			</main>
+			<footer>Some Footer</footer>
+		</div>
+	</div>
+
+</body>
+</html>
